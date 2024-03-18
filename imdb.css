@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+   background-image: url(wallpaper.jpeg);
+}
+
+
+#navContainer{
+    height: 8vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.56);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#navContainer *{
+    margin-right: 15px;
+}
+
+.logo{
+    border-radius: 6px;
+    width: 70px; 
+    height: 35px;
+}
+
+
+#searchBar{
+    height: 50%;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+}
+
+.material-symbols-outlined{
+    transform: translateX(-180%); 
+}
+
+.favoritelink{
+    text-decoration: none;
+    margin: 0;
+}
+
+
+
+.favorites{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+#cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.card {
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+    cursor: pointer;
+    padding-top: 8px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.card:hover{
+    border: solid black;
+}
+
+.cardTitle{
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.posterImage{
+    height: 300px;
+    width: 300px;
+}
+
+
+#movieDetailsContainer{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.addToFavorites{
+    margin-bottom: 10px
+}
+
+.addToFavorites:hover{
+    background-color: grey;
+}
+
+
+#favoritesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.removeFromFavorites{
+    margin-bottom: 5px;
+}
