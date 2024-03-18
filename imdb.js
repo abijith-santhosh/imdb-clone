@@ -10,7 +10,7 @@ async function displayMovies(searchTerm) {
         cardContainer.innerHTML = '';
 
         while (currentPage <= totalPages) {
-            const response = await fetch(`http://www.omdbapi.com/?apikey=b3ebef55&s=${searchTerm}&type=movie&page=${currentPage}`);
+            const response = await fetch(`https://www.omdbapi.com/?apikey=b3ebef55&s=${searchTerm}&type=movie&page=${currentPage}`);
 
             if (!response.ok) {
                 throw new Error("Could not fetch data");
@@ -160,7 +160,7 @@ function removeFromFavorites(imdbID) {
 // Function to fetch movie details from OMDB API
 async function fetchMovieDetails(imdbID) {
     try {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=b3ebef55&i=${imdbID}`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=b3ebef55&i=${imdbID}`);
         if (!response.ok) {
             throw new Error('Error fetching movie details');
         }
